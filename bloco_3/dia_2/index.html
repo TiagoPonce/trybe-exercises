@@ -5,6 +5,7 @@
         <title>HTML</title>
         <style>
             h1 {
+                font-family: sans-serif;
                 font-size: 65px;
                 color: orange;
             }
@@ -15,17 +16,41 @@
             .Style-list-p {
                 background-color: cadetblue;
             }
+            
+            p {
+                font-weight: 600;
+                font-size: 3em;
+                font-style: italic;
+                text-decoration: underline;
+                text-align: center;  
+            }
+
+            body {
+                font-size: 16px;
+            }
+
+            #List-one {
+                background-color: yellow;
+            }
+
+            #List-two {
+                background-color: red;
+            }
+
+            #List-tree {
+                background-color: brown;
+            }
 
         </style>
     </head>
 
     <body>
         <h1>Exercicios 3.2</h1>
-        <p class="Style-list-p">Qual eh a sua cor favorita?</p>
+        <p>Qual eh a sua cor favorita?</p>
         <ul class="Style-list-p">
-            <li>Amarelo</li>
-            <li>Vermelho</li>
-            <li>Marrom</li>
+            <li id="List-one">Amarelo</li>
+            <li id="List-two">Vermelho</li>
+            <li id="List-tree">Marrom</li>
         </ul>
     </body>
 </html>
