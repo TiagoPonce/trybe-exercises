@@ -1,0 +1,36 @@
+h1 {
+    font-family: sans-serif;
+    font-size: 65px;
+    color: orange;
+}
+ul {
+    background-color: burlywood;
+}
+
+.Style-list-p {
+    background-color: cadetblue;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+    font-style: italic;
+    text-decoration: underline;
+    text-align: center;  
+}
+
+body {
+    font-size: 16px;
+}
+
+#List-one {
+    background-color: yellow;
+}
+
+#List-two {
+    background-color: red;
+}
+
+#List-tree {
+    background-color: brown;
+}
