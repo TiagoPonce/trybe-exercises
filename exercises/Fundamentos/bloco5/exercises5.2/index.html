@@ -59,20 +59,52 @@
     <script>
 
         // Cria o caminho do pai de onde o elemento sera criado:
-        let caminhoPai = document.querySelector("body");
+        let addressBody = document.querySelector("body");
 
         // cria o elemento H1
         let elementH1 = document.createElement('h1');
 
-        elementH1.className = "ex5.2";
 
         // Coloca texto no elemento H1:
         elementH1.innerHTML = "Exercicio 5.2 - JavaScript DOM";
 
         // Adciona no Html:
-        caminhoPai.appendChild(elementH1) 
+        addressBody.appendChild(elementH1) 
 
-        
+        // cria a tag Div
+        let divBdy = document.createElement('div');
+
+        //Seta a classe
+        divBdy.className = "main-content";
+
+        //Coloca a a div criada no HTML:
+        addressBody.appendChild(divBdy);
+
+        // Get address div
+        let addressDiv = document.querySelector(".main-content");
+
+        // Cria a tag div center-content como filho da tag div
+        let divSon = document.createElement('div');
+
+        //seta class
+        divSon.className = "center-content";
+
+        // COloca no html
+        addressDiv.appendChild(divSon);
+
+        // Cria tag p
+        let pCenter = document.createElement('p');
+
+        // Coloca texto
+        pCenter.innerHTML = "Meu nome eh Tiago Carlos Ponce e tenho 29 anos =)";
+
+        //Seta caminho da div center-content
+        let addressDivSon = document.querySelector(".center-content");
+
+        //COloca no html
+        addressDivSon.appendChild(pCenter);
+
+
 
     </script>
   </body>
