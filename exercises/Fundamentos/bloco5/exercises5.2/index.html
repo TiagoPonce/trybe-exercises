@@ -56,6 +56,9 @@
     </style>
   </head>
   <body>
+
+    
+
     <script>
 
         // Cria o caminho do pai de onde o elemento sera criado:
@@ -113,6 +116,63 @@
 
         // Colocar no Html como filho da main-content
         addressDiv.appendChild(divMC);
+
+        // Adciona tag div com a classe right-content como fiho da tag div main-content
+        let divRg = document.createElement('div');
+        divRg.className = 'right-content';
+        addressDiv.appendChild(divRg);
+
+        //7 - Add img , src https://picsum.photos/200 e classe small-image - filha left-content
+        let addressLf = document.querySelector('.left-content');
+        let pic200 = document.createElement('IMG');
+        pic200.src = 'https://picsum.photos/200';
+        pic200.className = 'small-image';
+        addressLf.appendChild(pic200);
+
+        // Adiciona uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Div pai: right-content
+        addressRg = document.querySelector('.right-content');
+        let UnderListNumbers = document.createElement('ul');
+        UnderListNumbers.className = 'ul-Rc';
+        addressRg.appendChild(UnderListNumbers);
+
+        let numbersList = [
+          'um',
+          'dois',
+          'tres',
+          'quatro',
+          'cinco',
+          'seis',
+          'sete',
+          'oito',
+          'nove',
+          'dez'
+        ];
+
+        let addressUlist = document.querySelector('.ul-Rc');
+        
+        for (let index = 0 ; index < numbersList.length ; index += 1) {
+          let number = numbersList[index];
+
+          let numberListItem = document.createElement('li');
+          numberListItem.innerText = number;
+
+          addressUlist.appendChild(numberListItem);
+        }
+
+        // Create 3 h1 son of main-content addressDiv
+
+        let textsH3 = [
+          'Hello, my name is Tiago Ponce',
+          'Im 29 years old',
+          'And im very happy'
+        ];
+
+        for (let index = 0 ; index < textsH3.length ; index += 1) {
+          let hsCreated = document.createElement('h3');
+          hsCreated.innerText = textsH3[index];
+
+          addressDiv.appendChild(hsCreated);
+        }
 
     </script>
   </body>
