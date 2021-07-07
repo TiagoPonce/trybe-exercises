@@ -170,11 +170,15 @@
         for (let index = 0 ; index < textsH3.length ; index += 1) {
           let hsCreated = document.createElement('h3');
           hsCreated.innerText = textsH3[index];
-          
+          hsCreated.className = 'description';
 
           addressDiv.appendChild(hsCreated);
         }
 
+        // Remove div left-content
+        addressDiv.removeChild(divMC);
+
+        
     </script>
   </body>
 </html>
