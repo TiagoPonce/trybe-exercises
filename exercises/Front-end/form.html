@@ -19,6 +19,20 @@
             <input type='number' name='cpfUser' id ='cpfUser' max="11" required>
             <label for="addressUser">Endereco</label>
             <input type='text' name='addressUser' id='addressUser' required maxlength="200">
+            <label for="input-estado">Estado:
+                <select name="estado" id="input-estado">
+                    <option value='sp'>Sao Paulo</option>
+                    <option value='sc'>Santa Catarina</option>
+                    <option value='rs'>Rio Grande Do Sul</option>
+                    <option value='ms'>Minas Gerais</option>
+                    <option value='amp'>Amapa</option>
+                </select>
+            </label>
+            <label for="typeResidencia">Casa: </label>  
+            <input type='radio' value="casa" name='typeResidencia' id='typeResidencia'>
+            <label for='typeResidenciaAp'> Apartamento:
+                <input type='radio' value="Apartamento" name='typeResidencia' id='typeResidenciaAp'>
+            </label>        
 
         </fieldset>
 
