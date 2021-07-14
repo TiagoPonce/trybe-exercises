@@ -181,6 +181,17 @@
 
         // Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
         divBdy.style.backgroundColor = 'green';
+
+        //remove the two last elements from the list created in step 8
+
+        for (let i = 0 ; i < numberListItem.length ; i += 1) {
+                let numberRemoved = numberListItem[i];
+
+                if ( numberRemoved.innerText.includes('nove') ) {
+                    addressUlist.removeChild(numberRemoved);
+                }
+            }
+        
     </script>
   </body>
 </html>
