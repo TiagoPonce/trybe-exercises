@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='styles.css'>
+</head>
+<body>
+
+    <div>
+        <form> 
+            <fieldset class='personal-data'>
+                <legend>Personal Data</legend>
+                <label for="fullName">Nome Completo</label>
+                <input type='text' required size='40' name="fullName" id="fullName"  maxlength='40'><br>
+                <label for="emailUser">Email</label>
+                <input type='email' name="emailUser" id="emailUser" maxlength="50" required><br>
+                <label for="cpfUser">CPF</label>
+                <input type='text' name='cpfUser' id ='cpfUser' max="11" required><br>
+                <label for="addressUser">Endereco</label>
+                <input type='text' name='addressUser' id='addressUser' required maxlength="200"><br>
+                <label for="input-estado">Estado:
+                    <select name="estado" id="input-estado">
+                        <option value='sp'>Sao Paulo</option>
+                        <option value='sc'>Santa Catarina</option>
+                        <option value='rs'>Rio Grande Do Sul</option>
+                        <option value='ms'>Minas Gerais</option>
+                        <option value='amp'>Amapa</option>
+                    </select>
+                </label><br>
+                <label for=''>Complemento: </label><br>
+                <label for="typeResidencia">Casa: </label>  
+                <input type='radio' value="casa" name='typeResidencia' id='typeResidencia'>
+                <label for='typeResidenciaAp'> Apartamento:
+                    <input type='radio' value="Apartamento" name='typeResidencia' id='typeResidenciaAp'><br>
+                </label>        
+            </fieldset>
+        
+
+            <fieldset class="personal-data">
+                <legend>Cargos Description</legend>
+                <label for="abstract">Summary</label>
+                <textArea name='abstract' id='Resumo curriculo' maxlength='1000' name='abstract' ></textArea><br>
+                <label for="cargo">Cargo:</label>
+                <input type='text' id='cargo' name='CargoUser' maxlength="40"><br>
+                <label for='Description-cargo'>Descricao Do cargo:</label>
+                <input type='text' id='Description-cargo' name='Description-cargo' maxlength="500"><br>
+                <label for='Initial-data'>Data de Inicio: </label> 
+                <input type='text' id="initial-data" name="initial-data" required><br>
+        
+                
+            </fieldset>
+            <div id='buttonSim'>
+                <button id='buttonSub' type="submit">Enviar</button>
+           </div>
+        </form>
+            
+
+    </div>
+
+
+</body>
+</html>
